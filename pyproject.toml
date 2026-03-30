@@ -1,0 +1,68 @@
+[project]
+name = "homl3"
+version = "0.1.0"
+description = "Hands-On Machine Learning 3 environment"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  #"box2d-py==2.3.*",
+  "ipython==8.17.*",
+  "ipywidgets==8.1.*",
+  "joblib==1.3.*",
+  "jupyterlab==4.0.*",
+  "jupyter==1.1.*",
+  "matplotlib==3.8.*",
+  "nbdime==3.2.*",
+  "nltk==3.8.*",
+  "numexpr==2.8.*",
+  "numpy==1.26.*",
+  "pandas==2.1.*",
+  "pillow==10.1.*",
+  "xgboost==1.7.*",
+  "pydot==1.4.*",
+  "graphviz",
+  "requests==2.31.*",
+  "scikit-learn==1.3.*",
+  "scipy==1.11.*",
+  "statsmodels==0.14.*",
+  "tqdm==4.66.*",
+ # "keras-core",
+ # "keras-tuner~=1.4.6",
+ # "tensorboard-plugin-profile~=2.14.0",
+ # "tensorboard~=2.14.1",
+ # "tensorflow-datasets~=4.9.3",
+ # "tensorflow-hub~=0.15.0",
+ # "tensorflow-serving-api~=2.14.0",
+ #"tensorflow~=2.14.0",
+  "transformers~=4.35.0",
+  "urlextract~=1.8.0",
+ # "gymnasium[atari,classic-control]",
+  "google-cloud-aiplatform~=1.36.2",
+  "google-cloud-storage~=2.13.0",
+]
+
+[project.optional-dependencies]
+rl = [
+  "gymnasium[atari,classic_control]",
+]
+
+chapter18 = [
+  "box2d-py==2.3.8",
+]
+
+tensorflow = [
+  "keras-core",
+  "keras-tuner~=1.4.6",
+  "tensorboard-plugin-profile~=2.14.0",
+  "tensorboard~=2.14.1",
+  "tensorflow-datasets~=4.9.3",
+  "tensorflow-hub~=0.15.0",
+  "tensorflow-serving-api~=2.14.0",
+  "tensorflow~=2.14.0",
+  "tensorflow-io-gcs-filesystem==0.31.0",
+]
+
+[tool.uv]
+package = false
+
+
+
